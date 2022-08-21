@@ -8,6 +8,10 @@ import datetime
 import functools
 import jwt
 
+from dotenv import load_dotenv
+
+load_dotenv()  # take environment variables from .env.
+
 # pylint: disable=import-error
 from flask import Flask, jsonify, request, abort
 
